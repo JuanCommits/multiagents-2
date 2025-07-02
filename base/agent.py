@@ -12,3 +12,5 @@ class Agent():
     def policy(self):
         pass
     
+    def train(self, *kwargs) -> None:
+        pass

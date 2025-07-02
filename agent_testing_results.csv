@@ -1,2 +1,0 @@
-game,agent1,agent2,agent1_wins,agent2_wins,draws,total_games,agent1_win_pct,agent2_win_pct,draw_pct
-tictactoe,random,minimax,0,9,1,10,0.0,90.0,10.0

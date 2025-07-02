@@ -52,7 +52,7 @@ class AlternatingGame(AECEnv):
     def game_over(self):
         return self.truncated() or self.terminated()
     
-    def available_actions(self):
+    def available_actions(self) -> list[ActionType]:
         pass
 
 
