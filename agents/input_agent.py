@@ -4,8 +4,8 @@ import numpy as np
 
 class InputAgent(Agent):
 
-    def __init__(self, game: AlternatingGame, agent: AgentID, seed=None) -> None:
-        super().__init__(game=game, agent=agent)
+    def __init__(self, game: AlternatingGame, agent: AgentID, name: str = None) -> None:
+        super().__init__(game=game, agent=agent, name=name)
 
     def action(self):
         return int(input('Action: '))

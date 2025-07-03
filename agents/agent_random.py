@@ -4,8 +4,8 @@ import numpy as np
 
 class RandomAgent(Agent):
 
-    def __init__(self, game: AlternatingGame, agent: AgentID, seed=None) -> None:
-        super().__init__(game=game, agent=agent)
+    def __init__(self, game: AlternatingGame, agent: AgentID, seed=None, name: str = None) -> None:
+        super().__init__(game=game, agent=agent, name=name)
 
     def action(self):
         return np.random.choice(self.game.available_actions())

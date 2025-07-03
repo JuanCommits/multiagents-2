@@ -35,7 +35,8 @@ class MonteCarloTreeSearch(Agent):
         rollouts: int = 10,
         selection: Callable[[MCTSNode, AgentID], MCTSNode] = uct,
         action_selection_mode: str ='max_count',
-        verbose: bool = False
+        verbose: bool = False,
+        name: str = None
     ) -> None:
         """
         Parameters:
@@ -47,7 +48,7 @@ class MonteCarloTreeSearch(Agent):
             action_selection_mode: action selection mode (default: max_count) (max_count: max visits, max_value: max value)
             verbose: print debug information (default: False)
         """
-        super().__init__(game=game, agent=agent)
+        super().__init__(game=game, agent=agent, name=name)
         self.simulations = simulations
         self.rollouts = rollouts
         self.selection = selection

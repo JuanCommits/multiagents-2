@@ -5,8 +5,8 @@ import sys
 
 class MiniMax(Agent):
 
-    def __init__(self, game: AlternatingGame, agent: AgentID, seed=None, depth: int=sys.maxsize) -> None:
-        super().__init__(game, agent)
+    def __init__(self, game: AlternatingGame, agent: AgentID, seed=None, depth: int=sys.maxsize, name: str = None) -> None:
+        super().__init__(game, agent, name)
 
         if depth < 0:
             raise ValueError("Depth must be a non-negative integer.")

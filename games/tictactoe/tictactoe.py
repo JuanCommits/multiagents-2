@@ -52,7 +52,7 @@ class TicTacToe(AlternatingGame):
         return self.env.board.legal_moves()
 
     def render(self):
-        print("Player:", self.agent_selection)
+        #print("Player:", self.agent_selection)
         print("Board:") 
         sq = np.array(self.env.board.squares).reshape((3, 3))
         for i in range(3):

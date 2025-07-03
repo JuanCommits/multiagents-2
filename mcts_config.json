@@ -1,0 +1,220 @@
+[
+    {
+        "agents_to_compare": [
+            {
+                "name": "random",
+                "type": "random"
+            },
+            {
+                "name": "mcts",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 10,
+                    "simulations": 100
+                }
+            }
+        ],
+        "game_name": "tictactoe",
+        "n_iters": 100,
+        "step": 25,
+        "use_tqdm_on_games": true,
+        "save_path": "results/tic-tac-toe/mcts(10_rollouts,100_simulations)_vs_random.png"
+    },
+    {
+        "agents_to_compare": [
+            {
+                "name": "minimax",
+                "type": "minimax",
+                "params": {
+                    "depth": 3
+                }
+            },
+            {
+                "name": "mcts",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 10,
+                    "simulations": 100
+                }
+            }
+        ],
+        "game_name": "tictactoe",
+        "n_iters": 100,
+        "step": 25,
+        "use_tqdm_on_games": true,
+        "save_path": "results/tic-tac-toe/mcts(10_rollouts,100_simulations)_vs_minimax(3_depth).png"
+    },
+    {
+        "agents_to_compare": [
+            {
+                "name": "mcts",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 10,
+                    "simulations": 100
+                }
+            },
+            {
+                "name": "minimax",
+                "type": "minimax",
+                "params": {
+                    "depth": 3
+                }
+            }
+        ],
+        "game_name": "tictactoe",
+        "n_iters": 100,
+        "step": 25,
+        "use_tqdm_on_games": true,
+        "save_path": "results/tic-tac-toe/minimax(3_depth)_vs_mcts(10_rollouts,100_simulations).png"
+    },
+    {
+        "agents_to_compare": [
+            {
+                "name": "mcts",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 10,
+                    "simulations": 100
+                }
+            },
+            {
+                "name": "mcts",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 5,
+                    "simulations": 200
+                }
+            }
+        ],
+        "game_name": "tictactoe",
+        "n_iters": 100,
+        "step": 25,
+        "use_tqdm_on_games": true,
+        "save_path": "results/tic-tac-toe/mcts(5_rollouts,200_simulations)_vs_mcts(10_rollouts,100_simulations).png"
+    },
+    {
+        "agents_to_compare": [
+            {
+                "name": "minimax",
+                "type": "minimax",
+                "params": {
+                    "depth": 2
+                }
+            },
+            {
+                "name": "mcts-10-100",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 10,
+                    "simulations": 100
+                }
+            }
+        ],
+        "game_name": "nocca-nocca",
+        "game_max_steps": 100,
+        "n_iters": 10,
+        "step": 2,
+        "use_tqdm_on_games": true,
+        "save_path": "results/nocca-nocca/mcts(10_rollouts,100_simulations)_vs_minimax(2_depth).png"
+    },
+    {
+        "agents_to_compare": [
+            {
+                "name": "minimax",
+                "type": "minimax",
+                "params": {
+                    "depth": 2
+                }
+            },
+            {
+                "name": "mcts-10-100",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 10,
+                    "simulations": 200
+                }
+            }
+        ],
+        "game_name": "nocca-nocca",
+        "game_max_steps": 100,
+        "n_iters": 10,
+        "step": 2,
+        "use_tqdm_on_games": true,
+        "save_path": "results/nocca-nocca/mcts(10_rollouts,200_simulations)_vs_minimax(2_depth).png"
+    },
+    {
+        "agents_to_compare": [
+            {
+                "name": "random",
+                "type": "random"
+            },
+            {
+                "name": "mcts",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 10,
+                    "simulations": 100
+                }
+            }
+        ],
+        "game_name": "nocca-nocca",
+        "game_max_steps": 100,
+        "n_iters": 10,
+        "step": 2,
+        "use_tqdm_on_games": true,
+        "save_path": "results/nocca-nocca/mcts(10_rollouts,100_simulations)_vs_random.png"
+    },
+    {
+        "agents_to_compare": [
+            {
+                "name": "mcts-10-100",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 10,
+                    "simulations": 100
+                }
+            },
+            {
+                "name": "mcts-5-200",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 5,
+                    "simulations": 200
+                }
+            }
+        ],
+        "game_name": "nocca-nocca",
+        "game_max_steps": 100,
+        "n_iters": 10,
+        "step": 2,
+        "use_tqdm_on_games": true,
+        "save_path": "results/nocca-nocca/mcts(5_rollouts,200_simulations)_vs_mcts(10_rollouts,100_simulations).png"
+    },
+    {
+        "agents_to_compare": [
+            {
+                "name": "mcts-5-200",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 5,
+                    "simulations": 200
+                }
+            },
+            {
+                "name": "mcts-5-200",
+                "type": "mcts",
+                "params": {
+                    "rollouts": 5,
+                    "simulations": 200,
+                    "action_selection_mode": "max_value"
+                }
+            }
+        ],
+        "game_name": "tictactoe",
+        "n_iters": 100,
+        "step": 25,
+        "use_tqdm_on_games": true,
+        "save_path": "results/tic-tac-toe/mcts(5_rollouts,200_simulations)_vs_mcts(5_rollouts,200_simulations)_max_value.png"
+    }
+]

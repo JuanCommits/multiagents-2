@@ -60,9 +60,10 @@ class CounterFactualRegret(Agent):
         self,
         game: AlternatingGame,
         agent: AgentID,
-        verbose: bool = False
+        verbose: bool = False,
+        name: str = None
     ) -> None:
-        super().__init__(game, agent)
+        super().__init__(game, agent, name)
         self.verbose = verbose
         self.node_dict: dict[ObsType, Node] = {}
 
